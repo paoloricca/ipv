@@ -155,3 +155,15 @@ body {
 #destination-content h5.title {
     color:#0068b3;
 }
+#footer h6 {
+    line-height:150%; color:#333333;
+}
+#footer h5 {
+    font-weight:bold; color:#222222;
+}
+#footer i {
+    margin-right:6px;
+}
+#footer i:hover {
+    color:#0068b3;
+}

@@ -280,8 +280,9 @@
                     </div>
 
                 </div>
+
                 <!-- Offers -->
-                <div class="row" style="margin-bottom:20px;">
+                <div id="offer-content" class="row" style="margin-bottom:20px;">
                     <div class="container-fluid">
                         <img id="offer" src="images/back_offers.png" class="img-responsive" />
                     </div>
@@ -514,37 +515,88 @@
                         });
                         $("#destination-container").html(htmlDestination);
                     </script>
-                    <div class="col-xs-12">
-                        <hr />
-                    </div>
                 </div>
-
 
             </div>
         </div>
+        <!-- header -->
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr />
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Sede Legale</h5>
+                        <h6>
+                            Via Isole del Capoverde, 71/73<br />
+                            00121 Roma (RM)
+                        </h6>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>Sede Operativa</h5>
+                        <h6>
+                            Viale Leonetto Cappiello, 14<br />
+                            00125 Roma (RM)
+                        </h6>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>
+                            C.F. e N.I.R.I.R
+                        </h5>
+                        <h6>
+                            04761781006
+                        </h6>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <h5>
+                            Iscr. Trib. Di Roma
+                        </h5>
+                        <h6>
+                            N. 8539/94<br />
+                            Cap Soc. € 150.000,00 I.V.
+                        </h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <i class="fa fa-facebook-square fa-lg"></i>
+                        <i class="fa fa-twitter-square fa-lg"></i>
+                        <i class="fa fa-youtube-square fa-lg"></i>
+                        <i class="fa fa-google-plus-square fa-lg"></i>
+                        <i class="fa fa-flickr fa-lg"></i>
+                        <i class="fa fa-pinterest-square fa-lg"></i>
+                        <i class="fa fa-instagram fa-lg"></i>
+                        <i class="fa fa-linkedin-square fa-lg"></i>
+                        <i class="fa fa-feed fa-lg"></i>
+                    </div>
+                    <div class="col-xs-12">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip({ html: true });
-                $('.carousel').carousel({
-                    interval: 20000
+            <script>
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip({ html: true });
+                    $('.carousel').carousel({
+                        interval: 20000
+                    });
                 });
-            });
-            $("#mainNav ul li a[href^='#']").on('click', function (e) {
+                $("#mainNav ul li a[href^='#']").on('click', function (e) {
 
-                // prevent default anchor click behavior
-                e.preventDefault();
+                    // prevent default anchor click behavior
+                    e.preventDefault();
 
-                // animate
-                $('html, body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 2000, function () {
+                    // animate
+                    $('html, body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 2000, function () {
 
-                    // when done, add hash to url
-                    // (default click behaviour)
-                    window.location.hash = this.hash;
+                        // when done, add hash to url
+                        // (default click behaviour)
+                        window.location.hash = this.hash;
+                    });
                 });
-            });
-        </script>
+            </script>
 </body>
 </html>
