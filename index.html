@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>IDEE PER VIAGGIARE, Tour Operator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto|Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="json/destination.js"></script>
+    </head>
+    <body>
+        <!-- menu -->
+        <div class="container-fluid">
+            <nav id="mainNav" class="navbar navbar-default" style="margin:0; background-color:#fff; border:0;">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img src="images/logoipv.png" class="img-responsive" data-toggle="tooltip" />
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" class="dropdown-toggle" id="ddm_infoline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <h6>
+                                        A colori <span class="caret"></span>
+                                    </h6>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="ddm_infoline">
+                                    <li>
+                                        <a class="page-scroll" href="#about">
+                                            <h6>
+                                                La Filosofia
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Il Profilo
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Il Team
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Gli amici
+                                            </h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#offer">
+                                    <h6>
+                                        Offerte
+                                    </h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#preventivi">
+                                    <h6>
+                                        Preventivi
+                                    </h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#destination">
+                                    <h6>
+                                        Destinazioni
+                                    </h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#preventivi">
+                                    <h6>
+                                        Hotel & Resort
+                                    </h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#preventivi">
+                                    <h6>
+                                        Tour & Crociere
+                                    </h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#preventivi">
+                                    <h6>
+                                        Agenzie
+                                    </h6>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" id="ddm_infoline" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <h6>
+                                        Infoline <span class="caret"></span>
+                                    </h6>
+                                        
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="ddm_infoline">
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Contatti
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Partner
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Normative
+                                            </h6>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h6>
+                                                Newsletter
+                                            </h6>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="row">
+                <div class="row" style="background-image:url('images/holidays-color-festival-india-colors-enjoy-people-holiday-holi-wallpaper-hd.jpg'); background-repeat:space; background-size:100%; background-position:top;">
+                    <div class="row" style="background-image:url('images/backhome.png'); background-size:100%;">
+                        <h1 class="titleHome hidden-xs"
+                            style="padding-top:13%; padding-bottom:22%; text-shadow: 2px 2px 20px #101010; font-size:48px;">
+                            Lavoriamo a colori.
+                        </h1>
+                        <h3 class="titleHome hidden-sm hidden-md hidden-lg"
+                            style="padding-top:10%; padding-bottom:22%; text-shadow: 2px 2px 20px #101010;">
+                            Lavoriamo a colori.
+                        </h3>
+                    </div>
+                </div>
+                <!-- about -->
+                <div id="about">
+                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-push-1 col-md-push-1 col-lg-push-1">
+                        <div class="col-xs-12">
+                            <h2 class="title text-uppercase text-center">
+                                La filosofia.
+                            </h2>
+                        </div>
+                        <div class="col-xs-12">
+                            <h4 class="subTitle hidden-xs text-muted">
+                                Offrire ai propri clienti non un semplice pacchetto turistico, ma un'esperienza sicura e confortevole, esclusiva ed indimenticabile.
+                            </h4>
+                            <h4 class="subTitle hidden-sm hidden-md hidden-lg text-muted">
+                                Offrire ai propri clienti non un semplice pacchetto turistico, ma un'esperienza sicura e confortevole, esclusiva ed indimenticabile.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        &nbsp;
+                    </div>
+
+                    <div class="col-xs-12">
+                        <hr style="margin-bottom:0;" />
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="col-xs-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-xs-12">
+                            <h3 class="title text-uppercase"><span style="color:orangered">A colori</span>, è l'esperienza Unica.</h3>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="subTitle text-muted">Contribuire a rendere più colorata la vita delle persone, la giusta sfumatura che proponiamo ad ognuno di voi per vivere a pieno le emozioni trasmesse dalle destinazioni prescelte, la sensibilità e la qualità offerta da un Tour Operator sempre disponibile, competente e affidabile.</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <hr />
+                        <img src="images/sample-image.png" class="img-responsive img-thumbnail" data-holder-rendered="true">
+                    </div>
+
+                    <div class="col-xs-12">
+                        <hr style="margin-bottom:0;" />
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                        <div class="col-xs-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-xs-12">
+                            <h3 class="title text-uppercase"><span style="color:darkcyan">A colori</span>, è il modo di lavorare.</h3>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="subTitle text-muted">Utilizzare ogni giorno le tonalità più intense della passione, della creatività e dell'innovazione per garantire il miglior servizio possibile e la cura di ogni dettaglio. Tanti colori, da sempre ispirano la visione ottimistica che guida le scelte e i nostri investimenti.</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <hr />
+                        <img src="images/sample-image.png" class="img-responsive img-thumbnail" alt="250x250" data-holder-rendered="true">
+                    </div>
+
+                    <div class="col-xs-12">
+                        <hr style="margin-bottom:0;" />
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="col-xs-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-xs-12">
+                            <h3 class="title text-uppercase"><span style="color:darkorange">A colori</span>, è la relazione con gli amici.</h3>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="subTitle text-muted">Raggiungere un obiettivo condiviso con il partner principale del nostro business: l'Agenzia di Viaggio. Tanti colori e tante sfumature per offrire sempre la soluzione, la destinazione o il servizio più efficace, lavorare e crescere insieme.</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                        <hr />
+                        <img src="images/sample-image.png" class="img-thumbnail img-responsive" alt="250x250" data-holder-rendered="true">
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        <hr style="margin-bottom:0;" />
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+                        <div class="col-xs-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-xs-12">
+                            <h3 class="title text-uppercase"><span style="color:darkgreen">A colori</span>, è la nostra filosofia.</h3>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="subTitle text-muted">Lavoriamo a colori  , se ancora non l'avete capito, è da sempre la sintesi di una filosofia aziendale ben chiara: offrire ai propri clienti non un semplice pacchetto turistico, ma un'esperienza sicura e confortevole, esclusiva ed indimenticabile.</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                        <hr />
+                        <img src="images/sample-image.png" class="img-responsive img-thumbnail" alt="250x250" data-holder-rendered="true">
+                    </div>
+
+                    <div class="col-xs-12">
+                        <hr />
+                    </div>
+
+                </div>
+                <!-- Offers -->
+                <div class="row" style="margin-bottom:50px;">
+                    <div class="container-fluid">
+                        <img id="offer" src="images/back_offers.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-12" style="margin-top:-25px;">
+                        <h1 class="text-center title text-uppercase">
+                            Offerte
+                        </h1>
+                    </div>
+                    <div class="col-xs-12">
+                        &nbsp;
+                    </div>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:400px;">
+                        <!-- Offers navigator -->
+                        <div class="col-xs-12">
+                            <div class="col-xs-1">
+                                <a class="btn" href="#myCarousel" role="button" data-slide="prev" data-toggle="tooltip" title="Precedente">
+                                    <i class="fa fa-angle-left fa-3x animated" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div id="offers" class="col-xs-10">
+                                <!-- Offers list -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active col-xs-12">
+                                        <div class="col-xs-12 text-center" style="margin-bottom:24px;">
+                                            <h3 class="title">ABU DHABI</h3>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">CLASSIC</p>
+                                                    <h5 class="text-center">***S</h5>
+                                                    <h4 class="text-center">Centro Yas Island Rotana</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>470,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 al 30 Aprile 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">CLASSIC</p>
+                                                    <h5 class="text-center">****</h5>
+                                                    <h4 class="text-center">Yas Island Rotana</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>510,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 al 30 Aprile 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">Deluxe</p>
+                                                    <h5 class="text-center">****</h5>
+                                                    <h4 class="text-center">Southern Sun</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>560,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 al 30 Aprile 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">CLASSIC WITH BALCONY</p>
+                                                    <h5 class="text-center">*****</h5>
+                                                    <h4 class="text-center">Khalidiya Palace Rayhaan by Rotana</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>630,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 al 30 Aprile 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-xs-12 text-center" style="margin-bottom:24px;">
+                                            <h3 class="title">GIAPPONE</h3>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">Moderno e Classico</p>
+                                                    <h6 class="text-center">Hotel 3/4 stelle, camera standard</h6>
+                                                    <h4 class="text-center">Tokio, Nara, Kyoto</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>2.650,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 Giugno al 30 Settembre 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">in libertà</p>
+                                                    <h6 class="text-center">Hotel 3/4 stelle, camera standard</h6>
+                                                    <h4 class="text-center">3 Notti Tokyo, Kyoto</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>3.000,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 Giugno al 30 Settembre 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">in libertà</p>
+                                                    <h6 class="text-center">Camera standard</h6>
+                                                    <h4 class="text-center">4 Notti Tokyo, 7 Notti Moorea</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>4.490,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 Giugno al 30 Settembre 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <p class="text-center">in libertà</p>
+                                                    <h6 class="text-center">Camera standard, Pass 7 giorni</h6>
+                                                    <h4 class="text-center">3 Notti Tokyo, 1 a Takayama, 1 a Kanazawa e 3 a Kyoto</h4>
+                                                </div>
+                                                <div class="panel-body text-center">
+                                                    <span class="lead"><strong>2630,00 <sup>€</sup></strong></span>
+                                                </div>
+                                                <ul class="list-group list-group-flush text-center">
+                                                    <li class="list-group-item">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                        dal 1 Giugno al 30 Settembre 2016
+                                                    </li>
+                                                </ul>
+                                                <div class="panel-footer"> <a class="btn btn-lg btn-block btn-default" href="#">Scopri</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-1">
+                                <a class="btn pull-right" href="#myCarousel" role="button" data-slide="next" data-toggle="tooltip" title="Prossima">
+                                    <i class="fa fa-angle-right fa-3x animated" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    &nbsp;
+                </div>
+
+                <!-- Destination -->
+                <div class="row">
+                    <div class="container-fluid">
+                        <img id="destination" src="images/back_destination.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-12" style="margin-top:-25px;">
+                        <h1 class="text-center title text-uppercase">
+                            Destinazioni
+                        </h1>
+                    </div>
+                    <div class="col-xs-12">
+                        &nbsp;
+                    </div>
+                    <div class="container-fluid" id="destination-container"></div>
+                    <script>
+                        var htmlDestination = "";
+                        $(destinations).each(function (index, list) {
+                            for (i = 0; i <= list.continents.length - 1; i++) {
+                                var destination = '';
+                                for (d = 0; d <= list.continents[i].destination.length - 1; d++) {
+                                    destination +=
+                                        '<div class="col-xs-12">' +
+                                            '<h5 style="margin:5px;">' + list.continents[i].destination[d].descE['ita'] + '</h5>' +
+                                        '</div>';
+                                }
+                                htmlDestination +=
+                                    '<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" style="border-right:1px solid #e1e1e1;">' +
+                                        '<h5 class="title text-uppercase">' + list.continents[i].descE['ita'] + '</h5>' + destination +
+                                    '</div>';
+                            }
+                        });
+                        $("#destination-container").html(htmlDestination);
+                    </script>
+                    <div class="col-xs-12">
+                        <hr />
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip({ html: true });
+                $('.carousel').carousel({
+                    interval: 20000
+                });
+            });
+            $("#mainNav ul li a[href^='#']").on('click', function (e) {
+
+                // prevent default anchor click behavior
+                e.preventDefault();
+
+                // animate
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 2000, function () {
+
+                    // when done, add hash to url
+                    // (default click behaviour)
+                    window.location.hash = this.hash;
+                });
+            });
+        </script>
+</body>
+</html>
