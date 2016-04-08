@@ -129,7 +129,7 @@ body {
     color:#fff; text-transform:uppercase; font-family:'Oswald'; text-align:center; letter-spacing:1px;
 }
 .subTitle {
-    font-family:'Roboto'; line-height:125%; color:#505050;
+    font-family:'Source Sans Pro'; line-height:125%; font-weight:300; color:#505050;
 }
 .cWhite {
     color:#fff;
@@ -150,10 +150,16 @@ body {
 }
 .navbar-default .navbar-nav > li > a:hover {
     color:#0068b3;
-    border-bottom:2px solid #0068b3;
+    border-bottom:1px solid #0068b3;
 }
 #destination-content h5.title {
-    color:#0068b3;
+    color:#967348;
+}
+#destination-content h6 {
+    font-family:'Oswald'; color:#555; text-transform:capitalize; font-size:13px;
+}
+#destination-content a {
+    color:#555;
 }
 #footer h6 {
     line-height:150%; color:#333333;
@@ -167,3 +173,143 @@ body {
 #footer i:hover {
     color:#0068b3;
 }
+#cookieChoiceInfo {
+    font-family:'Oswald'; font-size:12px; word-spacing:-0.5px; color:#333;
+}
+#cookieChoiceInfo a {
+    color:#0068b3; 
+}
+.section-header {
+    padding:2%;  margin:0; color:#fff; text-transform:uppercase; 
+    font-family:'Oswald'; text-align:center; letter-spacing:1px;
+}
+#offer-content .section-header {
+    text-shadow: 2px 3px 1px #806009;
+}
+#destination-content .section-header {
+    text-shadow: 2px 3px 1px #4d3b25;
+}
+.section-top {
+    background-image:url('/images/backhome_top.png'); background-size:100%; background-position:top; padding:1.5%; width:100%;
+}
+.section-down {
+    background-image:url('/images/backhome_down.png'); background-size:100%; background-position:bottom; padding:2.7%; width:100%;
+}
+div .row .home-section, 
+div .container-fluid .home-section {
+    margin-top:75px;
+}
+.c-ipv { color:#0068b3; }
+.c-celeste { color:#24abe2; }
+.c-fucsia { color:#e30688; }
+.c-verde { color:#219145; }
+.c-arancione { color:#f37b29; }
+.c-viola { color:#90288d; }
+.c-azzurro { color:#24abe2; }
+.bg-bianco { background-color:#fff; }
+.bg-petrolio { background-color:#128eb0; }
+.bg-arancione { background-color:#f37b29; }
+.bg-giallo { background-color:#fec113; }
+.bg-verde { background-color:#0c6f3c; }
+.bg-verde-scuro { background-color:#06381e; }
+.bg-marrone { background-color:#967348; }
+.bg-marrone-scuro { background-color:#664e31; }
+.bg-marrone-chiaro { background-color:#b38956; }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:#fff;
+}
+#destination-preview .modal-header a {
+    color:#fff; text-decoration:none;
+}
+#destination-preview .modal-header {
+    margin:0; padding-bottom:0; border-radius:4px; border-bottom:0; border-left:0; border-right:0;
+}
+#destination-preview .modal-content {
+    border:1px solid #71361b;
+}
+#destination-preview .modal-body .col-xs-10 {
+    border-left:1px solid #e1e1e1;
+}
+#destination-preview .modal-body h5 {
+    font-family:'Roboto'; line-height:150%; color:#707070;
+}
+#destination-preview .modal-body .col-xs-2 {
+    padding-left:0; margin:0;
+}
+#destination-preview .modal-body #left-menu a img {
+    width:45px;
+}
+#destination-preview .modal-body #left-menu .col-xs-12 {
+    padding:0;
+}
+#destination-preview .modal-body .col-xs-12 a {
+    margin:4px;
+    background-color:#fff;
+}
+#destination-preview .modal-header h3 {
+    color:#fff; text-shadow: 2px 2px 1px #59442b;
+}
+#destination-preview .modal-footer {
+    border-top:0;
+}
+.btn-circle {
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  padding:0;
+  font-size: 20px;
+  border-radius: 30px;
+  border-color:#ccc;
+  border-width:1px;
+}
+.btn-circle-active {
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  padding:0;
+  font-size: 20px;
+  border-radius: 30px;
+  border:2px solid #b38956;
+}
+.btn-circle-active:hover {
+    border-color:#b38956;
+}
+.btn-circle:hover {
+    border-color:#aaa;
+}
+.border-default {
+}
+.border-active {
+    border-bottom:1px solid #b38956; 
+}
+.btn-circle-sm {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 20px;
+  line-height: 1.65;
+  border-radius: 30px;
+}
+#Canali {
+    background-color:#fff; position:absolute; z-index:1; width:100%; height:auto; left:0%; top:80px; 
+    border-top:1px solid #ddd; padding-top:20px; padding-bottom:20px;
+}
+#Canali .col-xs-3 {
+     margin-bottom:20px;
+}
+
+#Canali h4 {
+    font-family:'Oswald'; text-transform:uppercase; letter-spacing:0.4px;
+}
+#Canali h5 {
+    font-family:'Source Sans Pro'; color:#999; font-weight:normal;
+}
+#Canali hr {
+    margin:2px;
+}
+/*p {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+}*/
