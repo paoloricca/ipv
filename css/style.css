@@ -146,7 +146,7 @@ body {
     font-family:'Oswald'; text-transform:uppercase;
 }
 .navbar-default .navbar-nav>li>a {
-    font-family:'Oswald'; color:#202020;
+    font-family:'Oswald'; color:#333;
 }
 .navbar-default .navbar-nav > li > a:hover {
     color:#0068b3;
@@ -305,8 +305,11 @@ div .container-fluid .home-section {
 #Canali h5 {
     font-family:'Source Sans Pro'; color:#999; font-weight:normal;
 }
+#Canali a {
+    text-decoration:none; color:#999;
+}
 #Canali hr {
-    margin:2px;
+    margin:6px;
 }
 /*p {
     opacity: 0.5;

@@ -29,7 +29,8 @@
     <body>
 
         <!-- Canali -->
-        <div id="Canali" class="hidden-xs">
+        <div id="Canali" class="collapse hidden-xs">
+            <!-- content -->
             <div class="col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
                 <h4 class="c-ipv">
                     Idee per viaggiare
@@ -113,6 +114,12 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </h5>
                 </div>
+            </div>
+            <!-- closer -->
+            <div class="col-xs-12 text-center">
+                <hr />
+                <a href="#Canali" class="fa fa-angle-up fa-2x" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
+                </a>
             </div>
         </div>
 
@@ -218,12 +225,24 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <a href="#" class="dropdown-toggle hidden-lg hidden-md hidden-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <h6>
+                                        Canali <span class="caret"></span>
+                                    </h6>
+                                </a>
+                                <a href="#Canali" class="hidden-xs" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
                                     <h6>
                                         Canali <span class="caret"></span>
                                     </h6>
                                 </a>
                                 <ul class="dropdown-menu hidden-lg hidden-md hidden-sm">
+                                    <li>
+                                        <a class="page-scroll" href="#about">
+                                            <h6>
+                                                Idee per viaggiare
+                                            </h6>
+                                        </a>
+                                    </li>
                                     <li>
                                         <a class="page-scroll" href="#about">
                                             <h6>
