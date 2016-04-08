@@ -293,17 +293,16 @@ div .container-fluid .home-section {
 }
 #Canali {
     background-color:#fff; position:absolute; z-index:1; width:100%; height:auto; left:0%; top:80px; 
-    border-top:1px solid #ddd; padding-top:20px; padding-bottom:20px;
+    border-top:1px solid #ddd; padding-top:10px; padding-bottom:10px;
 }
-#Canali .col-xs-3 {
-     margin-bottom:20px;
+#Canali .col-lg-4 {
+    margin-bottom:6px;
 }
-
 #Canali h4 {
     font-family:'Oswald'; text-transform:uppercase; letter-spacing:0.4px;
 }
 #Canali h5 {
-    font-family:'Source Sans Pro'; color:#999; font-weight:normal;
+    font-family:'Source Sans Pro'; color:#444; font-weight:400;
 }
 #Canali a {
     text-decoration:none; color:#999;
