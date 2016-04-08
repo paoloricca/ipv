@@ -295,6 +295,9 @@ div .container-fluid .home-section {
     background-color:#fff; position:absolute; z-index:1; width:100%; height:auto; left:0%; top:80px; 
     border-top:1px solid #ddd; padding-top:10px; padding-bottom:10px;
 }
+#Canali h4 span:hover {
+    text-decoration:underline; cursor:pointer;
+}
 #Canali .col-lg-4 {
     margin-bottom:6px;
 }
@@ -304,7 +307,7 @@ div .container-fluid .home-section {
 #Canali h5 {
     font-family:'Source Sans Pro'; color:#444; font-weight:400;
 }
-#Canali a {
+#Canali .closer a {
     text-decoration:none; color:#999;
 }
 #Canali hr {
