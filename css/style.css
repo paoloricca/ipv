@@ -292,8 +292,11 @@ div .container-fluid .home-section {
   border-radius: 30px;
 }
 #Canali {
-    background-color:#fff; position:absolute; z-index:1; width:100%; height:auto; left:0%; top:80px; 
-    border-top:1px solid #ddd; padding-top:10px; padding-bottom:10px;
+    position:absolute; z-index:1; height:auto; left:0%; top:80px; 
+    border-top:1px solid #ddd; padding-bottom:10px;
+}
+#Canali .row {
+    background-color:#fff; 
 }
 #Canali h4 span:hover {
     text-decoration:underline; cursor:pointer;
