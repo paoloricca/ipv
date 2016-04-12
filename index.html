@@ -206,19 +206,71 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <a class="fa fa-times-circle fa-2x pull-right" data-toggle="tooltip"
+                    <a class="fa fa-times-circle fa-lg pull-right c-nero" data-toggle="tooltip"
                        title="Chiudi" data-placement="left" style="text-decoration:none;"
                        data-dismiss="modal"></a>
                     <div class="row">
                         <div class="container-fluid">
-                            <h3 class="title text-uppercase">
+                            <h3 class="ipv-font text-uppercase">
                                 il team
                             </h3>
                         </div>
                     </div>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div id="team-anchor" class="container-fluid text-center">
+                        </div>
+                        <div class="col-xs-12">
+                            <h4 id="team-title" class="title text-center"></h4>
+                        </div>
+                        <div id="team-content" class="container-fluid">
+                        </div>
+                    </div>
+                    <script>
+                        var hdr = 'Fondatori,Direzione Generale,Direzione Vendite,Direzione operativa e prodotto,Progetto 1Tour,Amministrazione,Marketing e Social Network,Customer Care,Grafica,Ufficio Tecnico,Programmazionei e inserimento prodotti,Spedizione documenti,Biglietteria Aerea e Contrattualistica Portali,Team Medio Oriente - Oceano Indiano e Africa Australe,Team Stati Uniti - Caraibi e Messico - Bikers,Team Sud-Est asiatico e Australia - Polinesia e Giappone,Ufficio Gruppi,Grandi Utenze'.split(',');
+                        var clr = 'a1489e,feca36,ed2b9d,7c4ea1,a68863,359fbc,464e91,f37d45,42a161,45b8e6,e4414c,f58f49,308459,86543d,4b54a1'.split(',');
+                        for (a = 0; a <= hdr.length-1; a++) {
+                            $("#team-anchor").append('<a id="ncr-' + a + '" class="btn btn-xs fa fa-circle-o" data-toggle="tooltip" title="' + hdr[a] + '" data-placement="top"></a>');
+                        }
+                        var img = 'male,female,man,support'.split(',');
+                        /* team-content */
+                        for (i = 0; i <= hdr.length - 1; i++) {
+                            /* team-items */
+                            $("#team-content").append('<div class="team-item" style="display:none;" id="ncr-' + i + '-header"></div>');
+                            var itemNum = Math.floor(Math.random() * (8 - 0 + 0) + 0);
+                            for (t = 0; t <= itemNum; t++) {
+                                var strHtmlTeam = '';
+                                var imgsrc = img[Math.floor(Math.random() * (4 - 0 + 0) + 0)];
+                                var hue = clr[Math.floor(Math.random() * (15 - 0 + 0) + 0)];
+                                strHtmlTeam +=
+                                    '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">' +
+                                        '<div class="team-body container-fluid" style="border-top:3px solid #' + hue + ';">' +
+                                            '<div class="col-xs-4">' +
+                                                '<img src="images/' + imgsrc + '.png" class="img-responsive" />' +
+                                            '</div>' +
+                                            '<div class="col-xs-8">' +
+                                                '<h5><strong>#' + (eval(t)+1) + ' Name Surname</strong></h5>' +
+                                                '<h6><i>#job-role</i></h6>' +
+                                                '<h6>@mail</h6>' +
+                                            '</div>' +
+                                        '</div>' +
+                                    '</div>';
+                                $('#ncr-' + i + '-header').append(strHtmlTeam);
+                            }
+                        }
+                        $("#team-anchor a").click(function () {
+                            $('#' + $("#team-anchor a.btn-md").attr('id') + '-header').hide();
+                            $("#" + this.id + "-header").show();
+                            $('#' + $("#team-anchor a.btn-md").attr('id')).removeClass().addClass('btn btn-xs fa fa-circle-o');
+                            $(this).removeClass().addClass('btn btn-md fa fa-circle')
+                            $("#team-title").html($(this).attr("data-original-title"));
+                        });
+                        /* initialize team */
+                        $("#ncr-0-header").show();
+                        $("#ncr-0").removeClass().addClass('btn btn-md fa fa-circle');
+                        $("#team-title").html($("#ncr-0").attr("title"));
+                    </script>
                 </div>
             </div>
         </div>
@@ -984,43 +1036,45 @@
                         });
                         //]]>
                     </script>
-                    <script type="text/javascript">
 
-                        /* Add dynamically button to scroll to top of the page: coursesweb.net/javascript/ */
+    <!-- script for go2Top -->
+    <script type="text/javascript">
 
-                        // function to get browser's window height
-                        function getBrowsHeight() {
-                            if (self.innerHeight) var brows_height = self.innerHeight;
-                            else if (document.documentElement && document.documentElement.clientHeight) {
-                                var brows_height = document.documentElement.clientHeight;
-                            }
-                            else if (document.body) var brows_height = document.body.clientHeight;
+        /* Add dynamically button to scroll to top of the page: coursesweb.net/javascript/ */
 
-                            return brows_height;
-                        }
+        // function to get browser's window height
+        function getBrowsHeight() {
+            if (self.innerHeight) var brows_height = self.innerHeight;
+            else if (document.documentElement && document.documentElement.clientHeight) {
+                var brows_height = document.documentElement.clientHeight;
+            }
+            else if (document.body) var brows_height = document.body.clientHeight;
 
-                        // function to get scrollbar vertical position
-                        function scrollY() {
-                            return window.pageYOffset ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
-                        }
+            return brows_height;
+        }
 
-                        var brows_height = getBrowsHeight();         // window's height
+        // function to get scrollbar vertical position
+        function scrollY() {
+            return window.pageYOffset ? window.pageYOffset : document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+        }
 
-                        // register event on scroll window
-                        window.onscroll = function () {
-                            var scrl_pos = scrollY();                // get vertical scrollbar position
-                            // if vertical scroll position is more then 110% brows_height, makes '#scrtop' visible
-                            // else, if vertical scroll position is less then 110% brows_height, hides '#scrtop'
-                            if (scrl_pos > (400)) {
-                                document.getElementById('scrtop').style.display = 'block';
-                            }
-                            else if (scrl_pos < (brows_height * 1.1)) {
-                                document.getElementById('scrtop').style.display = 'none';
-                            }
-                        };
+        var brows_height = getBrowsHeight();         // window's height
+
+        // register event on scroll window
+        window.onscroll = function () {
+            var scrl_pos = scrollY();                // get vertical scrollbar position
+            // if vertical scroll position is more then 110% brows_height, makes '#scrtop' visible
+            // else, if vertical scroll position is less then 110% brows_height, hides '#scrtop'
+            if (scrl_pos > (400)) {
+                document.getElementById('scrtop').style.display = 'block';
+            }
+            else if (scrl_pos < (brows_height * 1.1)) {
+                document.getElementById('scrtop').style.display = 'none';
+            }
+        };
 
 
-                    </script>
+    </script>
 
 </body>
 </html>
