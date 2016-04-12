@@ -147,7 +147,7 @@ body {
     font-family:'Oswald';
 }
 #bannerHome h1, #bannerHome h4 {
-    color:#fff; text-transform:uppercase; font-family:'Oswald'; text-align:center; letter-spacing:0.4px;
+    color:#fff; text-transform:uppercase; font-family:'Middleton-Light'; text-align:center; letter-spacing:0.4px; font-weight:900;
 }
 .titleHome {
     color:#fff; text-transform:uppercase; font-family:'Oswald'; text-align:center; letter-spacing:1px;
